@@ -13,5 +13,8 @@ class Laptop:
     def save_laptop(self):
         print(f"{self.brand}-{self.ram}-{self.cpu}-{self.screensize}-{self.man_date}-{self.price}saved")
 
+    def to_tuple(self):
+        return (self.brand, self.ram, self.cpu, self.screensize, self.man_date, self.price)
+
     def Validate(self):
         return laptop_validator(self)
